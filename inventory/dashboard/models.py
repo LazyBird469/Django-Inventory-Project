@@ -9,5 +9,5 @@ CATEGORY = (
 
 class Product(models.Model): 
     name = models.CharField(max_length=100, null=True)
-    category = models.ChatField(max_legrth=20, choices=CATEGORY, null=True)
+    category = models.CharField(max_length=20, choices=CATEGORY, null=True)
     quantity = models.PositiveIntegerField(null=True)
